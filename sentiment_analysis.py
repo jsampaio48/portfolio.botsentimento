@@ -8,18 +8,6 @@ sys.stdout.reconfigure(encoding='utf-8')
 # Inicializa o analisador de sentimento
 analyzer = SentimentIntensityAnalyzer()
 
-# Adaptador para português (palavras-chave customizadas — se quiser manter para frase traduzida também)
-# analyzer.lexicon.update({
-#     'triste': -0.8,
-#     'feliz': 0.8,
-#     'péssimo': -0.9,
-#     'horrível': -1.0,
-#     'maravilhoso': 1.0,
-#     'ódio': -1.0,
-#     'amo': 1.0,
-#     'terrível': -1.0
-# })
-
 # Inicializa o tradutor
 translator = Translator()
 
